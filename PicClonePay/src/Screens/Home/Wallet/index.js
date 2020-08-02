@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { Feather, MaterialCommunityIcons, FontAwesome, AntDesign } from '@expo/vector-icons';
-import { Switch } from 'react-native';
+import React, { useState } from 'react'
+import { Feather, MaterialCommunityIcons, FontAwesome, AntDesign } from '@expo/vector-icons'
+import { Switch } from 'react-native'
 
 import {
   Wrapper,
@@ -15,40 +15,35 @@ import {
   Actions,
   Action,
   ActionLabel,
+  UseBalance,
+  UseBalanceTitle,
+  PaymentMethods,
+  PaymentMethodsTitle,
+  Card,
+  CardBody,
+  CardDetails,
+  CardTitle,
+  CardInfo,
+  Img,
   AddButton,
   AddLabel,
-} from './styles';
+  UseTicketContainer,
+  UseTicketButton,
+  UseTicketLabel,
+} from './styles'
 
-import {
-    Card,
-    CardBody,
-    CardDetails,
-    CardTitle,
-    CardInfo,
-    Img,} from './CardStyles'
-
-import {
-    UseBalance,
-    UseBalanceTitle,
-    PaymentMethods,
-    PaymentMethodsTitle,
-    UseTicketContainer,
-    UseTicketButton,
-    UseTicketLabel,
-} from './UseStyles'
-
-import creditCard from '../../../images/credit-card.png';
+import creditCard from '../../../images/credit-card.png'
 
 export default function Wallet() {
-  const [isVisible, setIsVisible] = useState(true);
-  const [useBalance, setUseBalance] = useState(true);
+  const [isVisible, setIsVisible] = useState(true)
+  const [useBalance, setUseBalance] = useState(true)
 
   function handleToggleVisibility() {
-    setIsVisible((prevState) => !prevState);
+    setIsVisible((prevState) => !prevState)
   }
 
   function handleToggleUseBalance() {
-    setUseBalance((prevState) => !prevState);
+    setUseBalance((prevState) => !prevState)
   }
   
   return (
@@ -74,7 +69,7 @@ export default function Wallet() {
           </BalanceContainer>
 
           <Info>
-            Seu saldo está rendendo 100% do CDI
+            Seu saldo estÃ¡ rendendo 100% do CDI
           </Info>
 
           <Actions>
@@ -139,5 +134,5 @@ export default function Wallet() {
         </UseTicketContainer>
       </PaymentMethods>
     </Wrapper>
-  );
+  )
 }
