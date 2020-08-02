@@ -70,9 +70,9 @@ export default function Navigation () {
         />
         <Tab.Screen 
         name="Pay" 
-        component={PayScreen}
+        component={HomeScreen}
         options={{
-            title:'',
+            title:'Início',
         }}
         />
         <Tab.Screen 
@@ -84,7 +84,7 @@ export default function Navigation () {
         />
         <Tab.Screen 
         name="Settings" 
-        component={PayScreen}
+        component={HomeScreen}
         options={{
             title:'Ajustes',
         }}
